@@ -9,3 +9,6 @@ toolz
 pathos
 pyspark
 mrjob
+python-twitter
+twitter
+ipykernel

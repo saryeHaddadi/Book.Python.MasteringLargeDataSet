@@ -14,8 +14,9 @@ def days_between(start,stop):
 def get_url(path):
     return request.urlopen(path).read()
 
-with ProcessPool(nodes=4) as P:
-    blog_posts = P.map(get_url,
-                       days_between((2000,1,1),
-                                     (2011,1,1)))
+if __name__ == '__main__':
+    with ProcessPool(nodes=4) as P:
+        blog_posts = P.map(get_url,
+                        days_between((2000,1,1),
+                                        (2011,1,1)))
 
