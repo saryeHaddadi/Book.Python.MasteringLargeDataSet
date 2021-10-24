@@ -6,6 +6,7 @@
 
 # external requirements
 toolz
+cytoolz
 pathos
 pyspark
 mrjob
