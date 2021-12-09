@@ -45,7 +45,7 @@ def write_poem(parts,name,i):
 
 def calc_total_size():
     paths = glob.iglob("./author*/*")
-    return sum(map(os.path.getsize,paths))
+    return sum(map(os.path.getsize, paths))
 
 def generate_poems(a, b, max_size=10000000):
     try:
